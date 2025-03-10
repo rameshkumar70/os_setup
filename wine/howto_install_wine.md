@@ -8,13 +8,8 @@ sudo apt update
 sudo apt install --install-recommends winehq-stable
 wine --version
 
-
-
 to update wine:
 sudo apt-get upgrade winehq-stable
 
-
 to remove wine:
 sudo apt remove wine
-
-

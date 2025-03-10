@@ -14,13 +14,11 @@ else
   set shortmess=aoO
 endif
 badd +1 post_install_setup.sh
-badd +0 oil:///home/rameshkumar/my_data/os_setup/
 argglobal
 %argdel
-edit oil:///home/rameshkumar/my_data/os_setup/
+edit post_install_setup.sh
 tcd ~/my_data/os_setup
 argglobal
-balt ~/my_data/os_setup/post_install_setup.sh
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -31,7 +29,7 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 1 - ((0 * winheight(0) + 19) / 38)
+let s:l = 1 - ((0 * winheight(0) + 19) / 39)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
